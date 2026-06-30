@@ -1,19 +1,18 @@
 ---
 title: "NSGP - Non-Stationairy Gaussian Process Regression"
 excerpt: "A Python implementation of Non stationary Gaussian Process Regression <br/><img src='/images/GP_vs_NSGP.png'>"
-permalink: https://github.com/Frakert/NSGPR/tree/main 
+permalink: https://github.com/FreekKlabbers/NSGPR/tree/main 
 collection: portfolio
 ---
-
 ![GP vs NSGP](/images/GP_vs_NSGP.png)
 
 A Python implementation for Non-Stationairy Gaussian Process Regression.
-GPR is a often used Bayesian regression approach, well known for the fact that it gives uncertainty with its predictions. 
+GPR is a often used Bayesian regression approach, well known for the fact that it gives uncertainty with its predictions.
 
 GPR has some problems, 2 of the biggest are computation time (with a Big-O notation of $n^3$) and stationarity assumption. The stationarity assumption is the assumption that the properties of the GPR are constant over the entire range. In other words, length scale should be roughly equal in all regions. In many applications, like physics, this is not always the case.
 
 This implementation of GPR allows for the lenghtscale and variance to be different over the entire range. It also uses PyTorch, allowing for GPU acceleration:
 
-[GitHub Link](https://github.com/Frakert/NSGPR)
+[GitHub Link](https://github.com/FreekKlabbers/NSGPR)
 
-This project was made as part of a bigger project to do adaptive sampling/active learning on FEM simulations to create FEM surrogate models with less data. For this, check out [Reduced Order Models for Non-Newtonian Fluids Using Non-Stationary Gaussian Process Regression](https://frakert.github.io/publication/NSGP)
+This project was made as part of a bigger project to do adaptive sampling/active learning on FEM simulations to create FEM surrogate models with less data. For this, check out [Reduced Order Models for Non-Newtonian Fluids Using Non-Stationary Gaussian Process Regression](https://FreekKlabbers.github.io/publication/NSGP)
